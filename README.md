@@ -5,3 +5,5 @@ Site   | [https://easings.net/](https://easings.net/)
 Thank you so much.
 ### How to use
 import {Ease} from '...';
+#### License
+MIT
