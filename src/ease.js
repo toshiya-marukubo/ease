@@ -1,10 +1,12 @@
-// Based on easings.net.
-// GitHub | https://github.com/ai/easings.net
-// Site   | https://easings.net/
-// Thank you so much.
-
+/**
+ * Return easing function.
+ * @class Ease
+ */
 export class Ease {
-  // if you are going to use dat.GUI. This function is return array.
+  /**
+   * if you are going to use dat.GUI. This function is return array.
+   * @return {array} functions name in array. 
+   */
   static returnEaseType() {
     const arr = [
       'linear',
@@ -46,6 +48,11 @@ export class Ease {
     return arr;
   }
   
+  /**
+   * Return easing function.
+   * @param {string} type - function name.
+   * @return {function} easing function.
+   */
   static returnEaseFunc(type) {
     if (type === 'linear') {
       return this.linear();
